@@ -1,5 +1,5 @@
 # PID-Motor-Controller
-Closed-loop DC motor speed control using quadrature encoder feedback and PID control on an ESP32.
+This project explores the design and implementation of a DC motor control system using an ESP32 microcontroller. The current implementation focuses on open-loop motor speed control using PWM, with plans to integrate encoder feedback for closed-loop speed regulation.
 
 ## Hardware Used
 - ESP32 (ESP-WROOM-32 development board)
@@ -8,11 +8,16 @@ Closed-loop DC motor speed control using quadrature encoder feedback and PID con
 - Breadboard and jumper wires
 - External motor power supply
 
-## Features
-- Motor enable/disable using standby control
-- Bidirectional motor control (CW / CCW)
-- Variable speed control using PWM
-- ESP32 hardware PWM (LEDC)
+## Software Tools
+- Arduino IDE
+- ESP32 Arduino Core
+- C/C++ for embedded programming
+
+## Current Functionality
+- Generates a PWM signal using the ESP32 LEDC peripheral
+- Controls motor speed by adjusting PWM duty cycle
+- Controls motor direction via digital GPIO pins
+- Demonstrates reliable open-loop motor operation
 
 ## How It Works
 - The ESP32 controls motor direction using the AIN1 and AIN2 pins on the TB6612FNG.
