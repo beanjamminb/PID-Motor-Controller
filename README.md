@@ -23,17 +23,16 @@ Closed-loop DC motor speed control using quadrature encoder feedback and PID con
 ## Current Status
 - [x] Motor spins in both directions
 - [x] PWM speed control implemented
-- [ ] Closed-loop control (PID)
-- [ ] Encoder feedback
+- [ ] Closed-loop control (PID) (In Progress)
+- [ ] Encoder feedback (In Progress)
+
+## Photos
+<img width="1342" height="620" alt="image" src="https://github.com/user-attachments/assets/c6e96963-03a2-463d-a798-a95835611392" />
+<img width="603" height="1307" alt="image" src="https://github.com/user-attachments/assets/b85d156f-af14-4835-80ea-d887a84b94b0" />
 
 ## Future Improvements
-- Add encoder feedback for speed measurement
-- Implement PID speed control
-- Add serial input for runtime speed/direction control
-- Improve power management and safety handling
-
-## What I Learned
-- Reading and applying motor driver datasheets
-- Using ESP32 hardware PWM (LEDC)
-- Safe motor direction switching
-- Practical embedded debugging
+- Add quadrature encoder support
+- Implement closed-loop speed control using PID
+- Add serial commands for dynamic speed control
+- Log motor speed data for analysis
+- Improve mechanical mounting and wiring robustness
