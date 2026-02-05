@@ -1,11 +1,37 @@
-#define AIN1  26
-#define AIN2  27
-#define PWMA  25
-#define STBY  14
+#include <Arduino.h>
 
-#define PWM_CHANNEL 0
-#define PWM_FREQ    20000   // 20 kHz (quiet, professional)
-#define PWM_RES     8       // 8-bit (0–255)
+// Motor pins
+const int pwmPin = 25;      // PWM output to motor driver
+const int dirPin1 = 26;     // Direction control pin A
+const int dirPin2 = 27;     // Direction control pin B
+
+// Encoder pins
+const int encoderPinA = 32;
+const int encoderPinB = 33;
+volatile long encoderCount = 0;
+
+// PWM configuration
+const int pwmChannel = 0;
+const int pwmFreq = 20000;   
+const int pwmResolution = 8; 
+
+// Need to test PID parameters
+float Kp = 0;
+float Ki = 0;
+float Kd = 0;
+
+// PID variables
+float integral = 0;
+float lastError = 0;
+
+// Target motor speed (counts per second) 
+// I put some random value there, will change later
+float targetSpeed = 200;
+
+// Timing
+unsigned long lastTime = 0;
+long lastEncoderCount = 0;
+
 
 void setup() {
   pinMode(AIN1, OUTPUT);
