@@ -32,8 +32,8 @@ This project explores the design and implementation of a DC motor control system
 - [ ] Encoder feedback (In Progress)
 
 ## Photos
-<img width="1342" height="620" alt="image" src="https://github.com/user-attachments/assets/c6e96963-03a2-463d-a798-a95835611392" />
-<img width="603" height="1307" alt="image" src="https://github.com/user-attachments/assets/b85d156f-af14-4835-80ea-d887a84b94b0" />
+<img width="1878" height="1010" alt="image" src="https://github.com/user-attachments/assets/8aacc747-71dc-4e4c-9303-f6bcc7c3a1d1" />
+
 
 ## Future Improvements
 - Add quadrature encoder support
@@ -41,3 +41,4 @@ This project explores the design and implementation of a DC motor control system
 - Add serial commands for dynamic speed control
 - Log motor speed data for analysis
 - Improve mechanical mounting and wiring robustness
+- Add temperature sensor and fan to make it smart fan based on temperature sensor and pid control
