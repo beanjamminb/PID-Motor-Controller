@@ -29,7 +29,9 @@ This project explores the design and implementation of a DC motor control system
 - [x] Motor spins in both directions
 - [x] PWM speed control implemented
 - [x] Closed-loop control (PID) 
-- [x] Encoder feedback 
+- [x] Encoder feedback
+
+Unfortunately I don't have a DC Power supply of 12V to fully power the motor so 5V will do now. On the lookout for cheap dc power supply to connect to.
 
 ## Photos
 <img width="1878" height="1010" alt="image" src="https://github.com/user-attachments/assets/8aacc747-71dc-4e4c-9303-f6bcc7c3a1d1" />
